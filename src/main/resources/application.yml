@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/cloud_test?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&autoReconnect=true
+#    url: jdbc:mysql://localhost:3306/cloud_test?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: password
+#配置mybatis-plus日志，可以看到sql
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+logging:
+  level:
+    root: info
